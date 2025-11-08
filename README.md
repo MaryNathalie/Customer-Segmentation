@@ -76,31 +76,32 @@ Several key decisions were made during the cleaning and modeling phases:
 
 ### Customer Segmentation (K-Means)
 
-The analysis identified four distinct customer segments:
+The analysis identified five distinct customer segments:
 
-  * **Cluster 2: Champions (295 customers)**
-
-      * **Profile:** High tenure (348 days), highest recency (335 days), and by far the **highest frequency** (avg. 13 repeat purchases).
-      * **Value:** Loyal, long-term customers with a high AOV (398).
-      * **Action:** Reward loyalty, solicit reviews, offer exclusive access.
-
-  * **Cluster 1: Big-Ticket Spenders (277 customers)**
-
-      * **Profile:** Low frequency (2.9) but the **highest AOV (884)** by a large margin.
-      * **Value:** They don't buy often, but spend significantly when they do.
-      * **Action:** Market high-value items, offer "white glove" service, avoid high-frequency discount-based marketing.
-
-  * **Cluster 0: Occasional / Established (1210 customers)**
-
-      * **Profile:** High tenure (316 days) but low frequency (3.3) and the lowest AOV (288).
-      * **Value:** They are long-time customers but are not highly engaged.
-      * **Action:** Re-engage with personalized recommendations based on past purchases (see MBA).
-
-  * **Cluster 3: New / At-Risk (899 customers)**
-
-      * **Profile:** **Lowest tenure** (150 days), **lowest recency** (84 days), and **lowest frequency** (1.85).
-      * **Value:** This group contains new customers and old customers who are churning (low recency).
-      * **Action:** Target with welcome offers (for new users) or "we miss you" campaigns (for churning users).
+  * **Cluster 3: Best Customers (224 Customers)**
+      * **Profile:** They have been customers the longest (high tenure, 347), have the longest active buying lifespan (high recency, 336), and buy the **most frequently** (14.4). They also have a **high Average Order Value (AOV)** (406). 
+      * **Value:** They buy often *and* spend a lot when they do.
+      * **Action:** Focus on loyalty rewards, exclusive access, and treating them as partners (e.g., soliciting feedback for new products).
+       
+  * **Cluster 2: Big-Ticket Spenders (250 Customers)**
+      * **Profile:** They have **exceptionally high Average Order Value (AOV)** (911). They have a moderate tenure (268) and active lifespan (207). Their purchase frequency (3.0) is low, indicating they don't buy often. 
+      * **Value:** They don't buy often, but when they do, they spend significantly more than any other group.
+      * **Action:** Do not bombard them with low-value "buy now" messages. Target them with high-margin products, exclusive releases, and white-glove service. Their value is in *basket size*, not frequency.
+        
+  * **Cluster 1: Loyal Customers (809 Customers)**
+      * **Profile:** They have a long tenure (338) and a long active lifespan (303). They purchase with good frequency (4.3) and have a moderate AOV (315). 
+      * **Value:** They are the reliable repeat buyers.
+      * **Action:** Nurture this relationship to maintain loyalty. Focus on community-building and personalized up-selling to increase their AOV and move them toward the VIP bracket.
+       
+  * **Cluster 0: At-Risk Customers (856 Customers)**
+      * **Profile:** Despite a moderate tenure (261 days), their active lifespan (159) and frequency (2.1) are very low. They also have the **lowest AOV** (264). 
+      * **Value:** They are the largest and least-engaged group. They made a couple of small repeat purchases but have likely disengaged.
+      * **Action:** This group needs re-activation. Target them with compelling offers to increase their AOV or incentives to make their next purchase. Analyze *why* their engagement stopped.
+   
+  * **Cluster 4: New Repeat Customers (542 Customers)**
+      * **Profile:** They have the **lowest tenure** (98), **shortest active lifespan** (60), and **lowest frequency** (1.8). Their AOV (269) is also very low.
+      * **Value:** They just started their repeat-purchase journey. All of these metrics are low, which is expected for new customers.
+      * **Action:** The goal is to convert them into long-term loyal customers (like Cluster 1). Focus on onboarding, demonstrating value, and encouraging a 3rd or 4th purchase.
 
 ### Retention (Cohort Analysis)
 
